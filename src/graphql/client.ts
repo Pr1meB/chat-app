@@ -3,11 +3,11 @@ import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { createClient } from "graphql-ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 
-const httpLink = createHttpLink({ uri: "http://localhost:8000/graphql" });
+const httpLink = createHttpLink({ uri: "https://chat-project-6vmq.onrender.com/graphql" });
 
 const wsLink = new GraphQLWsLink(
     createClient({
-      url: "ws://localhost:8000/graphql",
+      url: "https://chat-project-6vmq.onrender.com/graphql",
     })
   );
   

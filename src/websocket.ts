@@ -1,7 +1,7 @@
 import { store } from "./redux/store"; // Import Redux store
 import { RootState } from "./redux/rootReducer"; // Import RootState for Redux typing
 
-const BASE_WS_URL = "ws://localhost:8000/ws/chat/";
+const BASE_WS_URL = "wss://chat-project-6vmq.onrender.com/ws/chat/";
 
 class WebSocketManager {
   private socket: WebSocket | null = null;
